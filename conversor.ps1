@@ -1,6 +1,7 @@
 ﻿Function converter{
-$oldfiles = Get-ChildItem
+$oldfiles = Get-ChildItem | sort LastWriteTime
 $i = 1
+
 foreach ($newfile in $oldfiles)
 {
 if ($i -lt 10){
